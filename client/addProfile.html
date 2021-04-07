@@ -1,0 +1,49 @@
+<template name="addProfile">
+    <div class="row justify-content-center mb-3">
+        <div class="col-lg-6 text-center">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addModal">
+            Add a new user
+            </button>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="addModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="addModalLabel">Add a new user profile</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="addData">
+                    <div class="previewImg text-center">
+                        <img id="preImg" src="blank-profile_640.png" alt="">
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="profImgLabel">Image Path</span>
+                        <input type="text" class="form-control" id="profPic" aria-label="Profile image" aria-describedby="profImgLabel" placeholder="Path to image">
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="fnameLabel">First Name</span>
+                        <input type="text" class="form-control" id="firstName" aria-label="First name" aria-describedby="fnameLabel" placeholder="First Name">
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="lnameLabel">Last Name</span>
+                        <input type="text" class="form-control" id="lastName" aria-label="Last name" aria-describedby="lnameLabel" placeholder="Last Name">
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="ageLabel">Age</span>
+                        <input type="text" class="form-control" id="age" aria-label="age" aria-describedby="ageLabel" placeholder="Current Age">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary js-save">Save changes</button>
+            </div>
+            </div>
+        </div>
+    </div>
+</template>

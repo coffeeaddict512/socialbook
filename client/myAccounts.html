@@ -1,0 +1,20 @@
+<template name="myAccounts">
+    <div class="row justify-content-around">
+        {{#each theProfiles}}
+            <div class="col-lg-4">
+                <div class="pro-frame">
+                    <div class="p-frame">
+                        {{#if pPic}}
+                            <img src={{pPic}} alt="Image for Profile">
+                        {{else}}
+                            <img src="blank-profile_640.png" alt="Generic Image for Profile">
+                        {{/if}}
+                    </div>
+                    <div class="myInfo">
+                        <p class="fs-4">{{pFirst}} {{pLast}}, Lv{{pAge}}</p>
+                    </div>
+                </div>
+            </div>
+        {{/each}}
+    </div>
+</template>
