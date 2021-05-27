@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './main.html';
 import './myAccounts.html';
 import './addProfile.html';
+import './confirmDel.html';
 
 import '../lib/collection.js';
 import './myAccounts.js';

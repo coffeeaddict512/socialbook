@@ -1,7 +1,7 @@
 <template name="myAccounts">
     <div class="row justify-content-around">
         {{#each theProfiles}}
-            <div class="col-lg-4 my-3">
+            <div class="col-lg-4 my-3" id={{_id}}>
                 <div class="pro-frame">
                     <div class="p-frame">
                         {{#if pPic}}
@@ -14,11 +14,12 @@
                         <p class="fs-4">{{pFirst}} {{pLast}}, Lv{{pAge}}</p>
                     </div>
                     <div>
-                        <span class="js-delete">delete</span>
-                       <!--<i class="bi bi-trash"></i>--> 
+                        <i class="fa fa-pencil-square-o js-edit" aria-hidden="true"></i>
+                        <i class="fa fa-trash js-delete" aria-hidden="true"></i>
                     </div>
                 </div>
             </div>
         {{/each}}
     </div>
+    {{> confirmDel}}
 </template>

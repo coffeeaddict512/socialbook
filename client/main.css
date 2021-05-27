@@ -17,4 +17,12 @@ body {
 
 .js-delete{
   cursor: pointer;
+  font-size:1.5em;
+  color: #dc3545;
+}
+
+.js-edit{
+  cursor: pointer;
+  font-size:1.5em ;
+  color:#27792b;
 }
