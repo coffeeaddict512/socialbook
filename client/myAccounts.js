@@ -18,9 +18,23 @@ Template.myAccounts.events({
         $("#"+delID).fadeOut( "slow", function() {
             // Delete document permanantly
             profilesdb.remove({_id: delID});
-          //});
+          });
         //console.table(this._id);
         //console.log("deleting", myID);
-    //console.log("Deleting document", delID );
+        //console.log("Deleting document", delID );
+    },
+    'click .js-edit'(events){
+        let myID = this._id;
+        let imgPath = this.pPic;
+        let fname = this.pfirst;
+        let lname = this.pLast;
+        let age = this.pAge;
+        let gender = this.pGen;
+        document.getElementById("editImg").src = imgPath;
+        $('#editPic').val(imgPath);
+        $('#editfirstName').val(fname);
+        $('#editlastName').val(lname);
+        $('#editage').val(age);
+        $('#editModal').modal('show');
     }
 });

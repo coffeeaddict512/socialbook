@@ -7,7 +7,9 @@ import './main.html';
 import './myAccounts.html';
 import './addProfile.html';
 import './confirmDel.html';
+import './editProfile.html';
 
 import '../lib/collection.js';
 import './myAccounts.js';
 import './addProfile.js';
+import './editProfile.js';
