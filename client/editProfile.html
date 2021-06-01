@@ -8,7 +8,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <div class="addData">
+                <div class="editData">
                     <div class="previewImg text-center">
                         <img id="editImg" src="blank-profile_640.png" alt="">
                     </div>
@@ -25,8 +25,8 @@
                         <input type="text" class="form-control" id="editlastName" aria-label="Last name" aria-describedby="lnameLabel" placeholder="Last Name">
                     </div>
                     <div class="input-group mb-3">
-                        <span class="input-group-text" id="ageLabel">Age</span>
-                        <input type="text" class="form-control" id="age" aria-label="age" aria-describedby="ageLabel" placeholder="Current Age">
+                        <span class="input-group-text" id="editageLabel">Age</span>
+                        <input type="text" class="form-control" id="editage" aria-label="age" aria-describedby="ageLabel" placeholder="Current Age">
                     </div>
                 </div>
             </div>
@@ -36,9 +36,12 @@
                 <input class="form-check-input mx-2" type="radio" name="genderRadio" value="female">
                 <label class="form-check-label" for="flexRadioDefault2">Female</label>
               </div>
+              <input type="hidden" id="editID">
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary js-save">Save changes</button>
+                <button type="button" class="btn btn-secondary js-closeEdit" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary js-saveEdit">Save changes</button>
             </div>
             </div>
         </div>
+    </div>
+    </template>
