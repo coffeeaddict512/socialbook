@@ -10,7 +10,8 @@ import './addProfile.html';
 import './confirmDel.html';
 import './editProfile.html';
 
-import './infiniteScroll.js';
+
 import '../lib/collection.js';
 import './myAccounts.js';
 import './addProfile.js';
+import './infiniteScroll.js';
