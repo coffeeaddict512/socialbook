@@ -1,6 +1,6 @@
 Template.myAccounts.helpers({
     theProfiles(){
-        return profilesdb.find();
+        return profilesdb.find({}, Session.get("profLimit"));
     }
 });
 
