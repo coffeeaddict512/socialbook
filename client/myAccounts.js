@@ -1,6 +1,8 @@
 Template.myAccounts.helpers({
     theProfiles(){
+        if (Session.get("filter") === "All")
         return profilesdb.find({}, {limit: Session.get("profLimit")});
+        return profilesdb.find({"pGen": Session.get("filter")} , {limit: Session.get("profLimit")});
     }
 });
 
@@ -39,9 +41,9 @@ Template.myAccounts.events({
         $('#editModal').modal('show');
         let genRadio = $('#editModel input[name="genderRadio"]');
         if (gender === "male")
-            genRadio.filter('[value=male').prop('checked', true);
+            genRadio.filter('[value=male]').prop('checked', true);
         else
-            genRadio.filter('[value=female').prop('checked', true);
+            genRadio.filter('[value=female]').prop('checked', true);
 
     },
     'click .js-saveEdit'(event){
