@@ -61,7 +61,7 @@ Template.myAccounts.events({
                 'pFirst': fname,
                 'pLast': lname,
                 'pAge': age,
-                'pGen': gender,
+                'pGen': gender
 
             }}
         );
