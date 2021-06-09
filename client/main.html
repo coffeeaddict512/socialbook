@@ -4,7 +4,10 @@
 
 <body>
   <div class="container">
-    {{> addProfile}}
+    {{> loginButtons}}
+    {{#if currentUser}}
+      {{> addProfile}} 
+    {{/if}}
     {{> profFilter}}
     {{> myAccounts}}
   </div>

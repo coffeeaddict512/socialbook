@@ -14,8 +14,10 @@
                         <p class="fs-4">{{pFirst}} {{pLast}}, Lv{{pAge}}</p>
                     </div>
                     <div>
-                        <i class="fa fa-pencil-square-o js-edit" aria-hidden="true"></i>
-                        <i class="fa fa-trash js-delete" aria-hidden="true"></i>
+                        {{#if currentUser}}
+                            <i class="fa fa-pencil-square-o js-edit" aria-hidden="true"></i>
+                            <i class="fa fa-trash js-delete" aria-hidden="true"></i>
+                        {{/if}}
                     </div>
                 </div>
             </div>

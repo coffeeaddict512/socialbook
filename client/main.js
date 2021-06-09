@@ -13,6 +13,7 @@ import './filter.html';
 
 
 import '../lib/collection.js';
+import '../lib/userAcct.js';
 import './myAccounts.js';
 import './addProfile.js';
 import './infiniteScroll.js';
