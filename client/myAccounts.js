@@ -1,7 +1,7 @@
 Template.myAccounts.helpers({
     theProfiles(){
         if (Session.get("filter") === "All")
-        return profilesdb.find({}, {limit: Session.get("profLimit")});
+            return profilesdb.find({}, {limit: Session.get("profLimit")});
         return profilesdb.find({"pGen": Session.get("filter")} , {limit: Session.get("profLimit")});
     }
 });
@@ -13,7 +13,7 @@ Template.myAccounts.events({
         $('#confirmModal').modal('show');
         
     },
-    'click .js-comfirmDel'(events){
+    'click .js-confirmDel'(event){
         let delID = $("#confirmID").val();
         $('#confirmModal').modal('hide');
         //let myDoc = event.target.parentNode.parentNode.parentNode;
@@ -39,7 +39,7 @@ Template.myAccounts.events({
         $('#editlastName').val(lname);
         $('#editage').val(age);
         $('#editModal').modal('show');
-        let genRadio = $('#editModel input[name="genderRadio"]');
+        let genRadio = $('#editModal input[name="genderRadio"]');
         if (gender === "male")
             genRadio.filter('[value=male]').prop('checked', true);
         else
@@ -52,7 +52,7 @@ Template.myAccounts.events({
         let fname = $('#editfirstName').val();
         let lname = $('#editlastName').val();
         let age = $('#editage').val();
-        let gender = $('#editModel input[name="genderRadio"]:checked').val();
+        let gender = $('#editModal input[name="genderRadio"]:checked').val();
         $('#editModal').modal('hide');
         //update the document
         profilesdb.update({_id: editID},
