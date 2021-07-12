@@ -19,7 +19,7 @@ import './addProfile.js';
 import './infiniteScroll.js';
 import './filter.js';
 
-if(Meteor.userId())
+//if(Meteor.userId())
     Meteor.subscribe("profData");
-else
-    Meteor.subscribe("noUser");
+//else
+    //Meteor.subscribe("noUser");
