@@ -24,6 +24,7 @@ import './confirmDel.html';
 import './editProfile.html';
 
 import './signIn.html';
+import './signIn.js';
 
 //if(Meteor.userId())
     Meteor.subscribe("profData");
