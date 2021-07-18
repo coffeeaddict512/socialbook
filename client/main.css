@@ -22,5 +22,5 @@ body {
   color:#27792b;
 }
 .btn-default{
-  border: 4px solid rgb(99, 189, 99);
+  border: 4px solid rgb(99, 189, 99) !important;
 }
