@@ -27,7 +27,8 @@ Template.addProfile.events({
                 "pLast":profLast,
                 "pAge":profAge,
                 "pGen":profGen,
-                "pOwn":Meteor.userId()
+                "pOwn":Meteor.userId(),
+                "createdOn": new Date().getTime()
             });
             // clear input boxes
             document.getElementById("preImg").src = "blank-profile_640.png";
