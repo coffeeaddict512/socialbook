@@ -1,0 +1,26 @@
+<template name="viewProfile">
+    <div class="row mt-5">
+        {{#each theProfiles}}
+        <div class="col-md-5 maxH">
+            <img class="w-100" src={{pPic}} alt="">
+        </div>
+        <div class="col-md-7">
+            <div class="row">
+                <div class="col-md 4">Name:&nbsp;{{pFirst}}&nbsp;{{pLast}}</div>
+                <div class="col-md 4">Age:&nbsp;{{pAge}}</div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    Sex:&nbsp;{{pGen}}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    created by&nbsp;{{pName}}
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+
+</template>

@@ -5,7 +5,7 @@
                 <div class="pro-frame">
                     <div class="p-frame">
                         {{#if pPic}}
-                            <img src={{pPic}} alt="Image for Profile">
+                            <img class="w-100" src={{pPic}} alt="Image for Profile">
                         {{else}}
                             <img src="blank-profile_640.png" alt="Generic Image for Profile">
                         {{/if}}
@@ -13,11 +13,19 @@
                     <div class="myInfo">
                         <p class="fs-4">{{pFirst}} {{pLast}}, Lv{{pAge}}</p>
                     </div>
-                    <div>
-                        {{#if currentUser}}
+                    <div class="row justify-content-between">
+                        <div class="col-md-6">
+                            Posted by {{pName}}
+                        </div>
+                        <div class="col-md-3 text-end">
+                            <a href="/profile/{{_id}}"><i class="fa fa-eye js-view"></i></a>
+                            {{#if isOwner}}
                             <i class="fa fa-pencil-square-o js-edit" aria-hidden="true"></i>
                             <i class="fa fa-trash js-delete" aria-hidden="true"></i>
-                        {{/if}}
+                        {{/if}}</div>
+                    </div>
+                    <div>
+                        
                     </div>
                 </div>
             </div>

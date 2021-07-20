@@ -8,6 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../lib/collection.js';
 import '../lib/userAcct.js';
 import './infiniteScroll.js';
+import '../lib/router.js';
 
 import './main.html';
 
@@ -26,7 +27,10 @@ import './editProfile.html';
 import './signIn.html';
 import './signIn.js';
 
-//if(Meteor.userId())
-    Meteor.subscribe("profData");
-//else
-    //Meteor.subscribe("noUser");
+import './error404.html';
+import './navBar.html';
+
+import './viewProfile.html';
+import './viewProfile.js';
+
+

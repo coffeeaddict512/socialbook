@@ -28,6 +28,7 @@ Template.addProfile.events({
                 "pAge":profAge,
                 "pGen":profGen,
                 "pOwn":Meteor.userId(),
+                "pName":Meteor.user().username,
                 "createdOn": new Date().getTime()
             });
             // clear input boxes

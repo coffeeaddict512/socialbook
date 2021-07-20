@@ -10,6 +10,12 @@ Template.myAccounts.helpers({
             return profilesdb.find({"pGen": Session.get("filter")} , {limit: Session.get("profLimit")});
        }
       
+    },
+    isOwner(){
+        if(this.pOwn == Meteor.userId())
+            return true;
+        else
+            return false;
     }
 });
 
