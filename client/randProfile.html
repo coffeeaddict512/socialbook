@@ -1,0 +1,20 @@
+<template name="randProfile">
+    <div class="row mt-5">
+        {{#with theProfile}}
+        <div class="col-lg-8 maxH">
+            <img class="w-100" src={{pPic}} alt="">
+        </div>
+        <div class="col-lg-4">
+            <div class="row">
+                <div class="row">
+                   <div class="col">Name:&nbsp;{{pFirst}}&nbsp;{{pLast}}</div> 
+                </div>
+                <div class="row">
+                     <div class="col">Age:&nbsp;{{pAge}}</div>
+                </div>
+            </div>
+        </div>
+        {{/with}}
+    </div>
+
+</template>

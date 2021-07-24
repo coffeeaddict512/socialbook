@@ -1,5 +1,4 @@
 <template name="signInForm">
-    <!-- Button trigger modal -->
     {{#if currentUser}}
         <div class="row justify-content-between">
             <div class="col-md-6">
@@ -10,31 +9,13 @@
             </div>
         </div>
     {{else}}
-        <div class="row justify-content-end">
-            <div class="col-md-2 text-end">
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">Sign In</button>
+        <div class="row justify-content-around">
+            <div class="col-lg-4">
+                {{> randProfile}}
+            </div>
+            <div class="col-lg-3 text-end">
+                 {{> atForm}}
             </div>
         </div>
     {{/if}}
-  
-    <!-- Modal -->
-    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    {{#if currentUser}}
-                        <br><p>You have Successfully Signed In</p>
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    {{else}}
-                        {{> atForm}}
-                    {{/if}}
-                </div>
-                <!--<div class="modal-footer">
-            
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div> -->
-      </div>
-    </div>
-  </div>
 </template>
