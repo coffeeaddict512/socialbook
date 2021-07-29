@@ -1,4 +1,4 @@
-Template.navForm.events({
+Template.nav.events({
     'click .js-logout'(){
         AccountsTemplates.logout();
     }
