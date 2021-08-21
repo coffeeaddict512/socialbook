@@ -1,5 +1,10 @@
 <template name="myAccounts">
     <div class="row justify-content-around">
+        <div class="row justify-content-around">
+            <div class="col-md-6">
+                {{> profFilter}}
+            </div>
+        </div>
         {{#each theProfiles}}
             <div class="col-lg-4 my-3" id={{_id}}>
                 <div class="pro-frame">
